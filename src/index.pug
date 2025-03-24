@@ -8,8 +8,8 @@ div
   div(plug="body")
     .ldcv.autogap.scroll(ld="ldcv",data-name="list"): .base.w-480.rwd
       .inner.p-0(style="height:80vh;overflow-y:scroll")
-        .sticky.p-3.border-bottom.bg-white(style="top:0")
-          input.form-control(ld="search")
+        .sticky.p-3.border-bottom.bg-white.shadow-sm(style="top:0")
+          input.form-control(ld="search",t,t-placeholder="search")
         .p-2: .px-2.py-1.rounded-sm.clickable.option(ld-each="option",data-ldcv-set="")
     .m-edit.has-tips.manual(ld="error-root")
       .position-relative(ld="input-group")

@@ -2,8 +2,12 @@ module.exports =
   pkg:
     extend: name: \@makeform/choice, dom: \overwrite
     i18n:
-      en: Object.fromEntries(country-list.map (o) -> [o.1, o.3])
-      "zh-TW": Object.fromEntries(country-list.map (o) -> [o.1, o.2])
+      en: {
+        search: "Search ..."
+      } <<< Object.fromEntries(country-list.map (o) -> [o.1, o.3])
+      "zh-TW": {
+        search: "搜尋 ..."
+      } <<< Object.fromEntries(country-list.map (o) -> [o.1, o.2])
   init: ({root, pubsub}) ->
     pubsub.fire \init.choice, do
       config:

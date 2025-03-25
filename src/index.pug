@@ -10,7 +10,11 @@ div
       .inner.p-0(style="height:80vh;overflow-y:scroll")
         .sticky.p-3.border-bottom.bg-white.shadow-sm(style="top:0")
           input.form-control(ld="search",t,t-placeholder="search")
-        .p-2: .px-2.py-1.rounded-sm.clickable.option(ld-each="option",data-ldcv-set="")
+        .p-2: .px-2.py-1.rounded-sm.clickable.option(ld-each="option")
+        .sticky.px-3.py-2.border-top.bg-white.shadow-sm(style="bottom:0")
+          .d-flex.align-items-center.justify-content-between
+            .btn.btn-sm.btn-primary(ld="reset",t="reset")
+            .btn.btn-sm.btn-primary(data-ldcv-set="",t="close")
     .m-edit.has-tips.manual(ld="error-root")
       .position-relative(ld="input-group")
         .btn.btn-outline-secondary(ld="toggle content",data-name="list",style="flex:1 0 50%") ...

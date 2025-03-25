@@ -4,9 +4,13 @@ module.exports =
     i18n:
       en: {
         search: "Search ..."
+        close: "Close"
+        reset: "Reset"
       } <<< Object.fromEntries(country-list.map (o) -> [o.1, o.3])
       "zh-TW": {
         search: "搜尋 ..."
+        close: "關閉"
+        reset: "重設"
       } <<< Object.fromEntries(country-list.map (o) -> [o.1, o.2])
   init: ({root, pubsub}) ->
     pubsub.fire \init.choice, do

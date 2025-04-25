@@ -7,10 +7,14 @@ div
     include:lsc index.ls
   div(plug="body")
     .ldcv.autogap.scroll(ld="ldcv",data-name="list"): .base.w-480.rwd
-      .inner.p-0(style="height:80vh;overflow-y:scroll")
-        .sticky.p-3.border-bottom.bg-white.shadow-sm(style="top:0")
+      .inner.p-0.d-flex.flex-column(style="height:80vh")
+        .pt-3.pb-2.px-3.border-bottom.bg-white.shadow-sm(style="top:0")
           input.form-control(ld="search",t,t-placeholder="search")
-        .p-2: .px-2.py-1.rounded-sm.clickable.option(ld-each="option")
+          .d-flex.mt-2.g-2.flex-wrap.text-sm
+            .d-flex.align-items-center(ld-each="chosen")
+              span(ld="label")
+              span.text-danger.text-sm.ml-1.clickable(ld="remove"): i.i-close
+        .p-2.flex-grow-1(style="overflow-y:scroll"): .px-2.py-1.rounded-sm.clickable.option(ld-each="option")
         .sticky.px-3.py-2.border-top.bg-white.shadow-sm(style="bottom:0")
           .d-flex.align-items-center.justify-content-between
             .btn.btn-sm.btn-primary(ld="reset",t="reset")

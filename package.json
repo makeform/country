@@ -7,11 +7,11 @@
   "author": "zbryikt",
   "license": "MIT",
   "dependencies": {
-    "@plotdb/srcbuild": "^0.0.68"
+    "@plotdb/srcbuild": "^0.0.69"
   },
   "devDependencies": {
     "cheerio": "^1.0.0",
-    "fedep": "^1.3.0",
+    "fedep": "^1.6.0",
     "fs-extra": "^11.3.0"
   }
 }

@@ -1,6 +1,7 @@
 module.exports =
   pkg:
     extend: name: \@makeform/choice, dom: \overwrite
+    host: name: \@grantdash/composer
     i18n:
       en: {
         search: "Search ..."

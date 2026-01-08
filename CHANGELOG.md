@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.0.3
+
+ - support @grantdash/composer host
+
+
 ## v1.0.2
 
  - tweak country list order

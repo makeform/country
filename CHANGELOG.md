@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.0.4
+
+ - use `臺` to replace `台`
+
+
 ## v1.0.3
 
  - support @grantdash/composer host
